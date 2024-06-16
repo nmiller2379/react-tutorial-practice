@@ -54,6 +54,7 @@ body {
   font-family: sans-serif;
   margin: 20px;
   padding: 0;
+  height: 100vh;
 }
 
 .square {
@@ -71,20 +72,52 @@ body {
   width: 34px;
 }
 
+.board-row {
+  height: 80vh;
+}
 .board-row:after {
   clear: both;
-  content: '';
+  content: "";
   display: table;
+}
+
+.square {
+  height: 182px;
+  width: 182px;
+  font-size: 100px;
 }
 
 .status {
   margin-bottom: 10px;
 }
 .game {
+  height: 80vh;
+  width: 80vw;
   display: flex;
   flex-direction: row;
 }
 
+.game-board {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 .game-info {
   margin-left: 20px;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-info button {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  margin-bottom: 10px;
+  font-size: 18px;
 }
